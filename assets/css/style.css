@@ -83,6 +83,11 @@ h6 {
   font-style: normal;
   color: #fff;
 }
+#topbar #topbar1{
+  align-items: center;
+  width: 100%;
+}
+
 #topbar #topbar1 #topbar2{
   align-items: center;
 }
@@ -764,7 +769,7 @@ section {
     text-align: center;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: px) {
   .about {
     text-align: center;
   }
