@@ -142,26 +142,26 @@ h6 {
 --------------------------------------------------------------*/
 .Contact-btn {
   margin-left: 30px;
-  background: #0e4d20;
+  background: #07323e;
   color: #fff;
   border-radius: 15px;
-  padding: 18px 35px;
+  padding: 10px 35px;
   white-space: nowrap;
   transition: 0.3s;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   display: inline-block;
 }
 .get-started-btn {
-  margin-left: 30px;
+  margin-left: 5px;
   margin-right: -45px;
-  background: #bb1a1a;
+  background: #e97337;
   color: #fff;
   border-radius: 15px;
-  padding: 18px 32px;
+  padding: 10px 32px;
   white-space: nowrap;
   transition: 0.3s;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   display: inline-block;
 }
@@ -177,11 +177,19 @@ h6 {
 
 
 @media (max-width: 992px) {
-  .get-started-btn {
+  .get-started-btn,.Contact-btn {
     margin: 0 15px 0 0;
     padding: 6px 18px;
   }
+
+
 }
+@media (max-width: 768px) {
+  .get-started-btn,.Contact-btn {
+    display: none;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -462,8 +470,8 @@ h6 {
   font-size: 18px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 18px 30px;
-  border-radius: 4px;
+  padding: 6px 28px;
+  border-radius: 14px;
   transition: 0.5s;
   margin-top: 30px;
   color: #fff;
