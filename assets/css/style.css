@@ -66,7 +66,7 @@ h6 {
   top: 0px;
   left: 0px;
   z-index: 1000;
-  background: #d1571a;
+  background: #e97337;
   height: 40px;
   font-size: 18px;
   /* transition: all 0.5s; */
@@ -482,6 +482,11 @@ h6 {
 #hero .btn-get-started:hover {
   background: transparent;
   border-color: #fff;
+}
+
+
+#hero .main-image .image1.style{
+  width: 300px;
 }
 
 @media (max-width: 768px) {
