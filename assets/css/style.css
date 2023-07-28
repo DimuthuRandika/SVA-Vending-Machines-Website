@@ -63,11 +63,15 @@ h6 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
+  align-items: center!important;
+  width: 100%;
+  height: auto;
   top: 0px;
   left: 0px;
   z-index: 1000;
+  position: fixed;
   background: #e97337;
-  height: 40px;
+  /* height: 40px; */
   font-size: 18px;
   /* transition: all 0.5s; */
   color: #fff;
@@ -79,9 +83,18 @@ h6 {
   font-style: normal;
   color: #fff;
 }
-#topbar .p{
+#topbar #topbar1 #topbar2{
+  align-items: center;
+}
+#topbar #topbar1 #topbar2 .topper{
   padding-top: 500px;
-  width: auto;
+  width: 100%;
+  font-size: small;  
+  padding: 3px; 
+  margin: (0px, 10px, 0px, 10px);
+  width: 100%; 
+  font-weight: bold; 
+  text-align: center; 
 }
 
 
@@ -439,6 +452,9 @@ h6 {
   font-size: 60px;
   font-weight: 900;
   color: #fff;
+  font-weight: bold; 
+  font-size: 50px; 
+  width: 500px;
 }
 
 #hero h2 {
@@ -477,6 +493,8 @@ h6 {
   color: #fff;
   background: #e97337;
   border: 2px solid #e97337;
+  font-weight: bold; 
+  width:450px;
 }
 
 #hero .btn-get-started:hover {
@@ -485,9 +503,20 @@ h6 {
 }
 
 
-#hero .main-image .image1.style{
-  width: 300px;
+#hero .container .row .col-xl-6 .main-image .image1{
+  width: 450px;
 }
+
+@media(max-width:10000px){
+  #hero{
+    display: flex;
+    align-items:center ;
+  }
+  
+
+}
+
+
 
 @media (max-width: 768px) {
   #hero {
@@ -496,18 +525,34 @@ h6 {
   }
 
   #hero h1 {
-    font-size: 28px;
+    font-size: 18px;
+    margin-left: -20px;
+    align-items: center;
   }
 
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
   }
+  #hero .container .row .col-xl-6 .main-image .image1{
+    width: 210px;
+  }
 }
 
-@media (max-height: 500px) {
+@media (max-width: 500px) {
   #hero {
     height: 120vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: -250px;
+    background: black;
+  }
+
+  #hero .container .row .col-xl-6 .main-image .image1{
+    width: 210px;
+    margin-top: 1000px;
+    margin-bottom: 30px;
   }
 }
 
@@ -715,6 +760,11 @@ section {
 }
 
 @media (max-width: 768px) {
+  .about {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
   .about {
     text-align: center;
   }
